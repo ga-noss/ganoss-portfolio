@@ -1,0 +1,15 @@
+$primary: 	#32cd32;
+$secondary: #2F5233;
+
+$custom-colors: (
+    "dred": #45050C,
+    "lyellow": #C5E063,
+    "dgreen": #243913
+);
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
